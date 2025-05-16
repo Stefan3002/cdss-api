@@ -8,7 +8,8 @@ class WidgetSerializer(serializers.Serializer):
     id = serializers.IntegerField()
     name = serializers.CharField(max_length=100)
     description = serializers.CharField()
-
+    downloads = serializers.IntegerField()
+    publishDate = serializers.DateTimeField()
     # def create(self, validated_data):
     #     """
     #     Create a new widget instance.
